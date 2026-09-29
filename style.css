@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+    color: #333;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background-color: #2f3e46;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 25px 15px;
+}
+
+.sidebar h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+
+.sidebar a:hover {
+    background-color: #52727c;
+}
+
+/* Main Content */
+
+.main {
+    margin-left: 220px;
+    padding: 25px;
+}
+
+/* Header */
+header {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #2f3e46;
+}
+
+header p {
+    background-color: #52727c;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+/* Sections */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #2f3e46;
+}
+
+/* Dashboard Cards */
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    background-color: #e9f1f3;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #52727c;
+}
+
+.card p {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2f3e46;
+}
+
+/* Department Cards */
+.department {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.department-card {
+    width: 22%;
+    background-color: #f1f3f4;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.department-card h3 {
+    margin-bottom: 10px;
+    color: #52727c;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #2f3e46;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        display: inline-block;
+    }
+
+    .main {
+        margin-left: 0;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .department-card {
+        width: 45%;
+    }
+}
